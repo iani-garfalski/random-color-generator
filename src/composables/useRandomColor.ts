@@ -63,7 +63,7 @@ export default function useRandomColor() {
           stopDelayedProcessing();
         }
       }
-    }, 1000) as unknown as number; // Process one color per second
+    }, 1000) as number; // Process one color per second
   };
 
   /**
@@ -82,7 +82,7 @@ export default function useRandomColor() {
    */
   const startGeneratingColors = () => {
     if (mainIntervalId === undefined) {
-      mainIntervalId = setInterval(generateRandomColor, 1000) as unknown as number; // Generate a new color every second
+      mainIntervalId = setInterval(generateRandomColor, 1000)  as number; // Generate a new color every second
       isStopping = false; // Reset the stopping flag when restarted
     }
   };
